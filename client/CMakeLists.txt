@@ -166,6 +166,7 @@ if(WIN32)
 endif()
 
 if(APPLE)
+    set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)
     if(IOS)
         message("ios in mac")
       #do nothing, IOS is added in below
